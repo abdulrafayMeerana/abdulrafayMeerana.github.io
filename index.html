@@ -21,13 +21,24 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
       body {
         font-family: "Biryani", sans-serif;
@@ -36,119 +47,55 @@
     <title>EMEM Website</title>
   </head>
   <body>
-    
-
-      <div class="top-0 left-0 right-0 ">
-        <nav class="relative flex w-full flex-nowrap items-center justify-between py-2 bg-transparent lg:justify-start lg:py-4 z-50" data-te-navbar-ref>
-          <div class="flex w-full flex-wrap items-center justify-between md:px-20">
-
-            
-            
-            <a class="pr-2 text-xl text-black dark:text-neutral-200 ml-8 md:ml-0" href="index.html">
-              <img src="./assets/logo/2.png" alt="" class="w-[70px] lg:w-[100px] xl:w-[100px] md:w-[100px] ">
-            </a>
-            
-            <div
-              class="!visible mt-2 hidden flex-grow basis-[100%]   lg:mt-0 lg:!flex lg:basis-auto lg:flex lg:justify-end"
-              id="navbarSupportedContent3"
-              data-te-collapse-item>
-            
-              
-             
-
-      
-              <div class="">
-              <ul
-              class="xl:text-xl list-style-none mr-auto flex pl-10 flex-col pl-0 lg:flex-row lg:text-white text-lime-500 bg-white lg:bg-transparent"
-                data-te-navbar-nav-ref>
-                
-                <li class="my-1 lg:my-0  " data-te-nav-item-ref>
-                  <a class=" lg:px-2 " href="#">HOME</a>
-                </li>
-              
-                <li class="my-1 lg:my-0" data-te-nav-item-ref>
-                  <a class=" lg:px-2 " href="#about" 
-                 >ABOUT US</a>
-                </li>
-                
-                <li class="my-1 lg:my-0" data-te-nav-item-ref>
-                  <a class=" lg:px-2 " href="#product">OUR PRODUCT</a>
-                </li>
-               
-                <li class="my-1 lg:my-0" data-te-nav-item-ref>
-                  <a class=" lg:px-2 " href="#team">OUR TEAM</a>
-                </li>
-                <li class="my-1 lg:my-0" data-te-nav-item-ref>
-                  <a class=" lg:px-2 " href="#contact">CONTACT US</a>
-                </li>
-                <li class="my-1 lg:my-0" data-te-nav-item-ref>
-                  <button
-                    class="text-white p-1 text-base lg:px-[37px] font-semibold lg:p-3 rounded-[10px] bg-lime-500"
-                  >
-                    BOOK A RIDE
-                  </button></a>
-                </li>
-                
-              </ul>
-            </div>
-            </div>
-          </div>
-      
-          
-        </nav>
-          <!-- Hamburger button for mobile view -->
-        <button
-            class="block z-50 bg-fixed top-[20px] right-[10px] absolute border-0 bg-transparent  px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-            type="button"
-            data-te-collapse-init
-            data-te-target="#navbarSupportedContent3"
-            aria-controls="navbarSupportedContent3"
-            aria-expanded="false"
-            aria-label="Toggle navigation" data-te-toggle="modal" 
-            data-te-target="#exampleModal">
-            <!-- Hamburger icon -->
-            <span class="[&>svg]:w-7">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="h-7 w-7">
-                <path
-                  fill-rule="evenodd"
-                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                  clip-rule="evenodd" />
-              </svg>
-            </span>
-          </button>
-      </div>
+    <div class="flex flex-col">
       <div
         id="home"
-        class="absolute top-0  bg-[url('./assets/images/johny-goerend-i8Z84Y_fC7k-unsplash.jpg')] bg-no-repeat bg-cover bg-center w-full text-black"
+        class="bg-[url('./assets/images/johny-goerend-i8Z84Y_fC7k-unsplash.jpg')] bg-no-repeat bg-cover bg-center w-full text-black"
       >
         <div
-          class="flex flex-col justify-between px-[8%] h-screen w-full  backdrop-brightness-50"
+          class="flex flex-col px-[8%] w-full h-screen backdrop-brightness-50"
         >
+          <div class="flex">
+            <div class="mr-auto pt-5">
+              <img src="./assets/logo/2.png" class="w-[126px] h-[126px]" />
+            </div>
+            <span class="text-white text-9xl lg:hidden"
+              ><i class="fa-sharp fa-regular fa-bars"></i
+            ></span>
+            <div class="hidden lg:flex">
+              <ul class="flex text-white text-base mt-12 pr-[65px]">
+                <li><a href="#home">HOME</a></li>
+                <li class="pl-5"><a href="#about">ABOUT US</a></li>
+                <li class="pl-5"><a href="#product">OUR PRODUCT</a></li>
+                <li class="pl-5"><a href="#team">OUR TEAM</a></li>
+                <li class="pl-5"><a href="#contact">CONTACT US</a></li>
+              </ul>
+              <div class="mt-9">
+                <button
+                  class="lg:text-white text-base px-[37px] font-semibold py-1 rounded-[10px] bg-lime-500 xl: py-3"
+                >
+                  BOOK A RIDE
+                </button>
+              </div>
+            </div>
+          </div>
           <p
-            class="text-xs pt-[150px] md:pt-[300px] lg:mx-[88px] leading-5 lg:w-[1022px] text-white md:text-xl text-justify pb-[150px] lg:text-center lg:text-2xl lg:leading-10"
+            class="text-xs mt-[22%] mx-[7%] leading-5 text-white md:text-xl text-center lg:text-2xl lg:leading-10"
           >
             We understand that switching to electric vehicles can be a big
             decision, and we want to assure our customers that we will committed
             to providing the best possible experience and addressing any
             concerns they may have.
-            <img
-              src="./assets/images/Toggle2On.png"
-              class="w-[24px] lg:w-[42px] h-[24px] lg:h-[42px] mb-12 mt-9 lg:mt-[76px] lg:mb-[111px] mx-auto"
-              alt="no-img"
-            />
+            <a href="#about"
+              ><img
+                src="./assets/images/Toggle2On.png"
+                class="w-[24px] lg:w-[42px] h-[24px] lg:h-[42px] mb-12 mt-9 lg:mt-[7%] mx-auto"
+                alt="no-img"
+            /></a>
           </p>
         </div>
       </div>
-      
-      
-      <!-- ABOUT -->
-
-
-      <div id="about" class="flex flex-col mt-8  lg:mt-24 mb-7 lg:mb-10 px-[8%] h-auto w-full xl: pt-[600px]">
+      <div id="about" class="flex flex-col pt-10 px-[8%] h-auto">
         <p
           class="lg:text-[32px] pb-5 md:text-3xl text-xl text-lime-500 lg:font-semibold"
         >
@@ -183,9 +130,9 @@
               through innovation in your daily transportation
             </p>
           </div>
-          <div class="lg:pl-5 w-[100%] lg:w-[50%] lg:justify-right">
+          <div class="lg:pl-5 w-[100%] lg:pb-[5%] lg:w-[50%] lg:justify-right">
             <img
-              class="w-[590px] md:w-full lg:h-[478px] h-[292px] rounded-[20px]"
+              class="w-[100%] lg:h-[100%] h-[292px] rounded-[20px]"
               src="./assets/images/IMG_1967.JPG"
               alt="img"
             />
@@ -193,7 +140,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col mt-8 lg:mt-24 mb-7 lg:mb-10 px-[8%] h-auto w-full"
+        class="flex flex-col mt-8 lg:mt-10 mb-7 lg:mb-10 px-[8%] h-auto w-full"
       >
         <p
           class="lg:text-[32px] pb-5 md:text-3xl text-xl text-lime-500 lg:font-semibold lg:text-right"
@@ -203,7 +150,7 @@
         <div class="flex flex-col lg:flex-row">
           <div class="lg:pr-8 w-[100%] mb-5 lg:mb-0 lg:w-[50%]">
             <img
-              class="md:w-full lg:w-[590px] lg:h-[478px] h-[290px] rounded-[20px] flex-auto"
+              class="w-[100%] lg:h-[100%] h-[290px] rounded-[20px] flex-auto"
               src="./assets/images/15531015941407.JPG"
               alt="img"
             />
@@ -340,7 +287,7 @@
         >
           OUR TEAM
         </p>
-        <div class="flex overflow-x-auto whitespace-nowrap py-5 ">
+        <div class="flex no-scrollbar overflow-x-auto whitespace-nowrap py-5">
           <div
             class="flex-col shrink-0 border-solid border-4 border-gray-100 rounded-[20px] mr-2.5 lg:mr-[22px] w-[285px]"
           >
@@ -399,7 +346,7 @@
             </div>
           </div>
           <div
-            class="flex-col shrink-0 border-solid border-4 border-gray-100 rounded-[20px] mr-2.5 lg:mr-[22px] w-[285px]"
+            class="flex-col shrink-0 border-solid border-4 border-gray-100 rounded-[20px] w-[285px]"
           >
             <img
               src="./assets/images/724x724 Sustainability_0.png"
@@ -418,137 +365,138 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="contact" class="flex flex-col px-[8%] py-10 w-full">
-        <div>
-          <p
-            class="lg:text-[32px] md:text-3xl text-xl text-lime-500 mb-5 lg:font-semibold"
-          >
-            GET IN TOUCH
-          </p>
-          <p
-            class="text-black mb-5 lg:mb-0 lg:text-xl lg:leading-9 text-base md:text-base leading-7 text-justify"
-          >
-            Do you have an enquiry about <br />
-            our solutions, products or services?
-          </p>
-        </div>
-        <div class="flex flex-col lg:flex-row">
-          <div class="w-[100%] lg:w-[49%] mb-5 lg:mb-0 lg:mr-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d738.6310102932028!2d55.3810355408531!3d25.12483980353209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f64405d99a8e3%3A0x8ace9c6fbf110ed1!2sDubai%20Silicon%20Oasis%20Authority!5e0!3m2!1sen!2sae!4v1686161994694!5m2!1sen!2sae"
-              class="w-full h-[213px] md: h-[400px] lg:h-[368px] rounded-[20px]"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <form
-            action="www.getform.io"
-            method="POST"
-            class="flex flex-col w-full lg:w-[50%]"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
-            />
-            <input
-              type="number"
-              name="pno"
-              placeholder="Mobile Number"
-              class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
-            />
-            <input
-              type="text"
-              name="email"
-              placeholder="Email address"
-              class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
-            />
-            <textarea
-              placeholder="Message"
-              rows="9"
-              class="placeholder:text-left shadow-[0_0_5px_rgba(0,0,0,0.25)] mb-[30px] pt-6 pl-3 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
-            ></textarea>
-            <button
-              class="text-white bg-lime-500 text-sm lg:text-base rounded-md py-4"
-            >
-              Send
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="flex flex-col bg-lime-500 px-[8%] w-full">
-        <div class="flex flex-col w-full lg:flex-row">
-          <div class="flex flex-col w-full lg:w-[405px] mt-2.5 lg:mt-10">
-            <img src="./assets/logo/2.png" class="w-[126px] h-[126px]" />
-            <p
-              class="text-white text-sm lg:text-base lg:leading-7 leading-6 text-justify"
-            >
-              EMEM idea was created out of concern for the environment, out of
-              the certainty that we can contribute to the protection of our
-              environment and our communities.
-            </p>
-          </div>
-          <div class="flex lg:px-5 mt-[30px] lg:mt-[42px] lg:w-4/5">
-            <ul class="text-white w-[50%] lg:text-base text-sm md:text-base">
-              <li
-                class="lg:text-xl lg:mb-3 lg:font-semibold text-base md:text-xl text-white"
-              >
-                OUR COMPANY
-              </li>
-              <li class="mb-2">About Us</li>
-              <li class="mb-2">Our Focus</li>
-              <li class="mb-2">Our Team</li>
-              <li>Contact Us</li>
-            </ul>
 
-            <ul
-              class="text-white w-[50%] ml-5 lg:text-base text-sm md:text-base"
-            >
-              <li
-                class="lg:text-xl lg:mb-3 lg:font-semibold text-base md:text-xl text-white"
-              >
-                PRODUCTS
-              </li>
-              <li class="mb-2">E-Scooters</li>
-              <li>E-Bikes</li>
-            </ul>
-          </div>
-          <div class="flex flex-col mt-[30px] lg:mt-[42px] lg:px-5 lg:w-1/4">
+        <div id="contact" class="flex flex-col px-[8%] py-10 w-full">
+          <div>
             <p
-              class="lg:text-xl mb-3 lg:font-semibold text-base md:text-xl text-white"
+              class="lg:text-[32px] md:text-3xl text-xl text-lime-500 mb-5 lg:font-semibold"
             >
-              FOLLOW US
+              GET IN TOUCH
             </p>
-            <ul class="flex text-white lg:text-[42px] text-[32px]">
-              <li class="lg:mr-5 mr-3.5">
-                <a href="#" class="fa fa-facebook"></a>
-              </li>
-              <li class="lg:mr-5 mr-3.5">
-                <a href="#" class="fa fa-linkedin"></a>
-              </li>
-              <li class="lg:mr-5 mr-3.5">
-                <a href="#" class="fa fa-youtube"></a>
-              </li>
-              <li class="lg:mr-5 mr-3.5">
-                <a href="#" class="fa fa-twitter"></a>
-              </li>
-            </ul>
+            <p
+              class="text-black mb-5 lg:mb-0 lg:text-xl lg:leading-9 text-base md:text-base leading-7 text-justify"
+            >
+              Do you have an enquiry about <br />
+              our solutions, products or services?
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row">
+            <div class="w-[100%] lg:w-[49%] mb-5 lg:mb-0 lg:mr-5">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d738.6310102932028!2d55.3810355408531!3d25.12483980353209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f64405d99a8e3%3A0x8ace9c6fbf110ed1!2sDubai%20Silicon%20Oasis%20Authority!5e0!3m2!1sen!2sae!4v1686161994694!5m2!1sen!2sae"
+                class="w-full h-[213px] md: h-[400px] lg:h-[368px] rounded-[20px]"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <form
+              action="www.getform.io"
+              method="POST"
+              class="flex flex-col w-full lg:w-[50%]"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
+              />
+              <input
+                type="number"
+                name="pno"
+                placeholder="Mobile Number"
+                class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
+              />
+              <input
+                type="text"
+                name="email"
+                placeholder="Email address"
+                class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
+              />
+              <textarea
+                placeholder="Message"
+                rows="9"
+                class="placeholder:text-left shadow-[0_0_5px_rgba(0,0,0,0.25)] mb-[30px] pt-6 pl-3 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
+              ></textarea>
+              <button
+                class="text-white bg-lime-500 text-sm lg:text-base rounded-md py-4"
+              >
+                Send
+              </button>
+            </form>
           </div>
         </div>
-        <hr class="w-full bg-white h-[1px]" />
-        <div
-          class="pt-5 pb-10 lg:text-base text-xs bg-lime-500 text-white lg:text-center"
-        >
-          <p>
-            EMEM - Copyright 2023 | All Rights Reserved - Designed & Developed
-            by Meerana Technologies LLP
-          </p>
+        <div class="flex flex-col bg-lime-500 px-[8%] w-full">
+          <div class="flex flex-col w-full lg:flex-row">
+            <div class="flex flex-col w-full lg:w-[405px] mt-2.5 lg:mt-10">
+              <img src="./assets/logo/2.png" class="w-[126px] h-[126px]" />
+              <p
+                class="text-white text-sm lg:text-base lg:leading-7 leading-6 text-justify"
+              >
+                EMEM idea was created out of concern for the environment, out of
+                the certainty that we can contribute to the protection of our
+                environment and our communities.
+              </p>
+            </div>
+            <div class="flex lg:px-5 mt-[30px] lg:mt-[42px] lg:w-4/5">
+              <ul class="text-white w-[50%] lg:text-base text-sm md:text-base">
+                <li
+                  class="lg:text-xl lg:mb-3 lg:font-semibold text-base md:text-xl text-white"
+                >
+                  OUR COMPANY
+                </li>
+                <li class="mb-2">About Us</li>
+                <li class="mb-2">Our Focus</li>
+                <li class="mb-2">Our Team</li>
+                <li>Contact Us</li>
+              </ul>
+
+              <ul
+                class="text-white w-[50%] ml-5 lg:text-base text-sm md:text-base"
+              >
+                <li
+                  class="lg:text-xl lg:mb-3 lg:font-semibold text-base md:text-xl text-white"
+                >
+                  PRODUCTS
+                </li>
+                <li class="mb-2">E-Scooters</li>
+                <li>E-Bikes</li>
+              </ul>
+            </div>
+            <div class="flex flex-col mt-[30px] lg:mt-[42px] lg:px-5 lg:w-1/4">
+              <p
+                class="lg:text-xl mb-3 lg:font-semibold text-base md:text-xl text-white"
+              >
+                FOLLOW US
+              </p>
+              <ul class="flex text-white lg:text-[42px] text-[32px]">
+                <li class="lg:mr-5 mr-3.5">
+                  <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li class="lg:mr-5 mr-3.5">
+                  <a href="#" class="fa fa-linkedin"></a>
+                </li>
+                <li class="lg:mr-5 mr-3.5">
+                  <a href="#" class="fa fa-youtube"></a>
+                </li>
+                <li class="lg:mr-5 mr-3.5">
+                  <a href="#" class="fa fa-twitter"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="w-full bg-white h-[1px]" />
+          <div
+            class="pt-5 pb-10 lg:text-base text-xs bg-lime-500 text-white lg:text-center"
+          >
+            <p>
+              EMEM - Copyright 2023 | All Rights Reserved - Designed & Developed
+              by Meerana Technologies LLP
+            </p>
+          </div>
         </div>
       </div>
-    
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
