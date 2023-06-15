@@ -44,42 +44,162 @@
         font-family: "Biryani", sans-serif;
       }
     </style>
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            fontFamily: {
+              sans: ["Roboto", "sans-serif"],
+              body: ["Roboto", "sans-serif"],
+              mono: ["ui-monospace", "monospace"],
+            },
+          },
+          corePlugins: {
+            preflight: false,
+          },
+        };
+      </script>
     <title>EMEM Website</title>
   </head>
   <body>
-    <div class="flex flex-col">
-      <div
-        id="home"
-        class="bg-[url('./assets/images/johny-goerend-i8Z84Y_fC7k-unsplash.jpg')] bg-no-repeat bg-cover bg-center w-full text-black"
-      >
-        <div
-          class="flex flex-col px-[8%] w-full h-screen backdrop-brightness-50"
-        >
-          <div class="flex">
-            <div class="mr-auto pt-5">
-              <img src="./assets/logo/2.png" class="w-[126px] h-[126px]" />
-            </div>
-            <span class="text-white text-9xl lg:hidden"
-              ><i class="fa-sharp fa-regular fa-bars"></i
-            ></span>
-            <div class="hidden lg:flex">
-              <ul class="flex text-white text-base mt-12 pr-[65px]">
-                <li><a href="#home">HOME</a></li>
-                <li class="pl-5"><a href="#about">ABOUT US</a></li>
-                <li class="pl-5"><a href="#product">OUR PRODUCT</a></li>
-                <li class="pl-5"><a href="#team">OUR TEAM</a></li>
-                <li class="pl-5"><a href="#contact">CONTACT US</a></li>
-              </ul>
-              <div class="mt-9">
+     <header>
+        <!-- Navigation bar -->
+        <nav
+          class="absolute z-10 flex w-full items-center justify-between  py-2 text-neutral-600 shadow-lg hover:text-neutral-700  md:flex-wrap md:justify-start"
+          data-te-navbar-ref>
+          <div class="flex w-full  flex-wrap items-center justify-between px-3">
+            <div class="flex items-center justify-between w-full">
+              <!-- Hamburger menu button -->
+              
+              <div class=" pt-5 lg:hidden">
+                <img src="./assets/logo/2.png" class="w-[96px] h-[96px]" />
+             </div>
+            <div class="">
                 <button
-                  class="lg:text-white text-base px-[37px] font-semibold py-1 rounded-[10px] bg-lime-500 xl: py-3"
-                >
-                  BOOK A RIDE
+                  class="border-0 bg-transparent text-white px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-lime-400 focus:text-lime-400 dark:hover:text-white dark:focus:text-white lg:hidden"
+                  type="button"
+                  data-te-collapse-init
+                  data-te-target="#navbarSupportedContentX"
+                  aria-controls="navbarSupportedContentX"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- Hamburger menu icon -->
+                  <span class="[&>svg]:w-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-7 w-7">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                  </span>
                 </button>
-              </div>
+               </div>
+           </div>
+      
+            <!-- Navigation links -->
+            <div
+              class="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto justify-between"
+              id="navbarSupportedContentX"
+              data-te-collapse-item>
+              <div class=" pt-5 lg:block hidden">
+                <img src="./assets/logo/2.png" class="w-[96px] h-[96px]" />
+             </div>
+              <div class="">
+
+              <ul
+                class="pl-5 flex flex-col lg:flex-row lg:text-white lg:bg-transparent bg-white text-lime-400 "  
+                data-te-navbar-nav-ref>
+                <li class="mb-2 mt-2 lg:mt-0 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  <a
+                    class="block transition duration-150 ease-in-out hover:text-lime-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                    href="#!"
+                    data-te-nav-link-ref
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    >HOME</a
+                  >
+                </li>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  <a
+                    class="block transition duration-150 ease-in-out hover:text-lime-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                    href="#about"
+                    data-te-nav-link-ref
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    >ABOUT</a
+                  >
+                </li>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  <a
+                    class="block transition duration-150 ease-in-out hover:text-lime-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                    href="#product"
+                    data-te-nav-link-ref
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    >OUR PRODUCT</a
+                  >
+                </li>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                  <a
+                    class="block transition duration-150 ease-in-out hover:text-lime-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                    href="#team"
+                    data-te-nav-link-ref
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    >OUR TEAM</a
+                  >
+                </li>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                    <a
+                      class="block transition duration-150 ease-in-out hover:text-lime-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                      href="#contact"
+                      data-te-nav-link-ref
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                      >CONTACT</a
+                    >
+                  </li>
+                  <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                    <a
+                      class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                      href="#contact"
+                      data-te-nav-link-ref
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                      ><button
+                      class="text-white text-[12px] px-5 py-2 lg:text-base lg:px-[37px] font-semibold lg:py-2 rounded-[10px] bg-lime-500 "
+                    >
+                      BOOK A RIDE
+                    </button></a
+                    >
+                  </li>
+
+              </ul>
+            </div>
             </div>
           </div>
-          <p
+        </nav>
+      
+        <!-- Hero section with background image, heading, subheading and button -->
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          style="
+            background-position: 50%;
+            background-image: url('./assets/images/johny-goerend-i8Z84Y_fC7k-unsplash.jpg');
+            height: 100vh;
+          ">
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.75)">
+            <div class="flex h-full items-center justify-center">
+              <div class="px-6 text-center text-white md:px-12">
+                <p
             class="text-xs mt-[22%] mx-[7%] leading-5 text-white md:text-xl text-center lg:text-2xl lg:leading-10"
           >
             We understand that switching to electric vehicles can be a big
@@ -93,8 +213,15 @@
                 alt="no-img"
             /></a>
           </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </header>
+      
+      
+
+      <!-- About  -->
       <div id="about" class="flex flex-col pt-10 px-[8%] h-auto">
         <p
           class="lg:text-[32px] pb-5 md:text-3xl text-xl text-lime-500 lg:font-semibold"
@@ -496,7 +623,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
