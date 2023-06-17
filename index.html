@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,10 +35,6 @@
     />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    /> -->
     <style>
       body {
         font-family: "Biryani", sans-serif;
@@ -67,16 +63,16 @@
         <nav
           class="absolute z-10 flex w-full items-center justify-between  py-2 text-neutral-600 shadow-lg hover:text-neutral-700  md:flex-wrap md:justify-start"
           data-te-navbar-ref>
-          <div class="flex w-full  flex-wrap items-center justify-between">
+          <div class="flex w-full  flex-wrap items-center justify-between px-3">
             <div class="flex items-center justify-between w-full">
               <!-- Hamburger menu button -->
               
               <div class=" pt-5 lg:hidden">
-                <img src="./assets/logo/2.png" class="ml-5 md:w-[96px] md:h-[96px] w-[60px] h-[60px]" />
+                <img src="./assets/logo/2.png" class="w-[96px] h-[96px]" />
              </div>
             <div class="">
                 <button
-                  class="border-0 bg-transparent text-white pr-6 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-cyan-400 focus:text-cyan-400 dark:hover:text-white dark:focus:text-white lg:hidden"
+                  class="border-0 bg-transparent text-white px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-cyan-400 focus:text-cyan-400 dark:hover:text-white dark:focus:text-white lg:hidden"
                   type="button"
                   data-te-collapse-init
                   data-te-target="#navbarSupportedContentX"
@@ -84,7 +80,7 @@
                   aria-expanded="false"
                   aria-label="Toggle navigation">
                   <!-- Hamburger menu icon -->
-                  <span class="[&>svg]:w-10">
+                  <span class="[&>svg]:w-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -104,20 +100,20 @@
       
             <!-- Navigation links -->
             <div
-              class="!visible hidden grow basis-[100%] items-center lg:px-[8%] lg:!flex lg:basis-auto justify-between"
+              class="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto justify-between"
               id="navbarSupportedContentX"
               data-te-collapse-item>
               <div class=" pt-5 lg:block hidden">
-                <img src="./assets/logo/2.png" class="w-[126px] h-[126px]" />
+                <img src="./assets/logo/2.png" class="w-[96px] h-[96px]" />
              </div>
               <div class="">
 
               <ul
-                class="pl-9 flex flex-col w-full py-9 lg:py-0 lg:flex-row lg:text-white lg:bg-transparent bg-white text-cyan-400 "  
+                class="pl-5 lg:mt-1 flex flex-col lg:flex-row lg:text-white lg:bg-transparent bg-white text-cyan-400 "  
                 data-te-navbar-nav-ref>
-                <li class="mb-5 mt-2 lg:my-auto lg:pr-2" data-te-nav-item-ref>
+                <li class="mb-2 mt-2 lg:mt-0 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
-                    class="block transition duration-150 ease-in-out hover:text-cyan-400 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                    class="block transition duration-150 ease-in-out hover:text-cyan-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                     href="#!"
                     data-te-nav-link-ref
                     data-te-ripple-init
@@ -125,7 +121,7 @@
                     >HOME</a
                   >
                 </li>
-                <li class="mb-5 lg:my-auto lg:pr-2" data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
                     class="block transition duration-150 ease-in-out hover:text-cyan-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                     href="#about"
@@ -135,7 +131,7 @@
                     >ABOUT</a
                   >
                 </li>
-                <li class="mb-5 lg:my-auto lg:pr-2" data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
                     class="block transition duration-150 ease-in-out hover:text-cyan-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                     href="#product"
@@ -145,7 +141,7 @@
                     >OUR PRODUCT</a
                   >
                 </li>
-                <li class="mb-5 lg:my-auto lg:pr-2" data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                   <a
                     class="block transition duration-150 ease-in-out hover:text-cyan-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                     href="#team"
@@ -155,14 +151,14 @@
                     >OUR TEAM</a
                   >
                 </li>
-                <li class="mb-5 lg:my-auto lg:pr-16 " data-te-nav-item-ref>
+                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                     <a
                       class="block transition duration-150 ease-in-out hover:text-cyan-400 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                       href="#contact"
                       data-te-nav-link-ref
                       data-te-ripple-init
                       data-te-ripple-color="light"
-                      >CONTACT US</a
+                      >CONTACT</a
                     >
                   </li>
                   <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
@@ -173,7 +169,7 @@
                       data-te-ripple-init
                       data-te-ripple-color="light"
                       ><button
-                      class="text-white text-[12px] px-5 py-2 lg:text-base lg:px-[37px] font-semibold lg:py-5 rounded-[10px] bg-cyan-400"
+                      class="text-white text-[12px] px-5 py-2 lg:text-base lg:px-[37px] font-semibold lg:py-2 rounded-[10px] bg-cyan-400 "
                     >
                       BOOK A RIDE
                     </button></a
@@ -189,18 +185,17 @@
         <!-- Hero section with background image, heading, subheading and button -->
         <div
           class="relative overflow-hidden bg-cover bg-no-repeat"
-          style="
-            background-position: 50%;
-            background-image: url('./assets/images/johny-goerend-i8Z84Y_fC7k-unsplash.jpg');
-            height: 100vh;
-          ">
+         >
+          <div class="">
+            <img src="./assets/images/johny-goerend-i8Z84Y_fC7k-unsplash.jpg" alt="" class="md:w-full h-[60vh] md:h-[100vh]">
+          </div>
           <div
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
             style="background-color: rgba(0, 0, 0, 0.75)">
-            <div class="flex lg:h-full items-center justify-center">
-              <div class="px-[8%] text-center text-white md:px-12">
+            <div class="flex h-full items-center justify-center">
+              <div class="px-6 text-center text-white md:px-12">
                 <p
-            class="text-xs mt-[45%] lg:mt-[22%] mx-[9%] leading-5 text-white md:text-xl lg:text-center text-justify lg:text-2xl lg:leading-10"
+            class="text-xs mt-[160px] mx-[7%] leading-5 text-white md:text-xl text-center lg:text-2xl lg:leading-10"
           >
             We understand that switching to electric vehicles can be a big
             decision, and we want to assure our customers that we will committed
@@ -222,98 +217,51 @@
       
 
       <!-- About  -->
-      <div id="about">
-        <div class="lg:hidden flex flex-col pt-10 px-[8%] h-auto">
-          <p
-            class="lg:text-[32px] pb-5 md:text-3xl text-xl text-cyan-400 lg:font-semibold"
-          >
-            ABOUT US
-          </p>
-          <div class="flex flex-col">
-            <div class="w-[100%] mb-5">
-              <img
-                class="w-[100%] lg:h-[100%] h-[292px] rounded-[20px]"
-                src="./assets/images/IMG_1967.JPG"
-                alt="img"
-              />
-            </div>
-            <div class="flex flex-col w-[100%] lg:w-[50%] justify-left">
-              <p
-                class="text-black lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
-              >
-                EMEM idea was created out of concern for the environment, out of
-                the certainty that we can contribute to the protection of our
-                environment and our communities.
-              </p>
-              <br />
-              <p
-                class="text-black lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
-              >
-                We are action-minded, solution-oriented entrepreneurs who are
-                passionate about spreading the culture of sustainable clean
-                mobility and putting it into practice.
-              </p>
-              <br />
-              <p
-                class="text-black pb-5 lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
-              >
-                EMEM will bring to society completely new solutions for urban
-                mobility. Just as the pioneering companies did in the twentieth
-                century when they manufactured the elevator, the car and other
-                inventions and innovative solutions that changed the way of life.
-                Therefore, EMEM promises you to work on improving your life
-                through innovation in your daily transportation
-              </p>
-            </div>
+      <div id="about" class="flex flex-col pt-10 px-[8%] h-auto">
+        <p
+          class="lg:text-[32px] pb-5 md:text-3xl text-xl text-cyan-400 lg:font-semibold"
+        >
+          ABOUT US
+        </p>
+        <div class="flex flex-col lg:flex-row">
+          <div class="flex flex-col w-[100%] lg:w-[50%] justify-left">
+            <p
+              class="text-black lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
+            >
+              EMEM idea was created out of concern for the environment, out of
+              the certainty that we can contribute to the protection of our
+              environment and our communities.
+            </p>
+            <br />
+            <p
+              class="text-black lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
+            >
+              We are action-minded, solution-oriented entrepreneurs who are
+              passionate about spreading the culture of sustainable clean
+              mobility and putting it into practice.
+            </p>
+            <br />
+            <p
+              class="text-black pb-5 lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
+            >
+              EMEM will bring to society completely new solutions for urban
+              mobility. Just as the pioneering companies did in the twentieth
+              century when they manufactured the elevator, the car and other
+              inventions and innovative solutions that changed the way of life.
+              Therefore, EMEM promises you to work on improving your life
+              through innovation in your daily transportation
+            </p>
           </div>
-        </div>
-        <div class="hidden lg:flex flex-col pt-10 px-[8%] h-auto">
-          <p
-            class="lg:text-[32px] pb-5 md:text-3xl text-xl text-cyan-400 lg:font-semibold"
-          >
-            ABOUT US
-          </p>
-          <div class="flex flex-col lg:flex-row">
-            <div class="flex flex-col w-[100%] lg:w-[50%] justify-left">
-              <p
-                class="text-black lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
-              >
-                EMEM idea was created out of concern for the environment, out of
-                the certainty that we can contribute to the protection of our
-                environment and our communities.
-              </p>
-              <br />
-              <p
-                class="text-black lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
-              >
-                We are action-minded, solution-oriented entrepreneurs who are
-                passionate about spreading the culture of sustainable clean
-                mobility and putting it into practice.
-              </p>
-              <br />
-              <p
-                class="text-black pb-5 lg:text-xl text-xs md:text-base lg:leading-9 leading-5 text-justify"
-              >
-                EMEM will bring to society completely new solutions for urban
-                mobility. Just as the pioneering companies did in the twentieth
-                century when they manufactured the elevator, the car and other
-                inventions and innovative solutions that changed the way of life.
-                Therefore, EMEM promises you to work on improving your life
-                through innovation in your daily transportation
-              </p>
-            </div>
-            <div class="lg:pl-5 w-[100%] lg:pb-[5%] lg:w-[50%] lg:justify-right">
-              <img
-                class="w-[100%] lg:h-[100%] h-[292px] rounded-[20px]"
-                src="./assets/images/IMG_1967.JPG"
-                alt="img"
-              />
-            </div>
+          <div class="lg:pl-5 w-[100%] lg:pb-[5%] lg:w-[50%] lg:justify-right">
+            <img
+              class="w-[100%] lg:h-[100%] h-[292px] rounded-[20px]"
+              src="./assets/images/IMG_1967.JPG"
+              alt="img"
+            />
           </div>
         </div>
       </div>
       <div
-        id="focus"
         class="flex flex-col mt-8 lg:mt-10 mb-7 lg:mb-10 px-[8%] h-auto w-full"
       >
         <p
@@ -455,7 +403,7 @@
           </p>
         </div>
       </div>
-      <div id="team" class="flex flex-col px-[8%]">
+      <div id="team" class="flex flex-col px-[8%] pt-[60px]">
         <p
           class="lg:text-[32px] md:text-3xl text-xl text-cyan-400 lg:font-semibold"
         >
@@ -616,21 +564,21 @@
             <div class="flex lg:px-5 mt-[30px] lg:mt-[42px] lg:w-4/5">
               <ul class="text-white w-[50%] lg:text-base text-sm md:text-base">
                 <li
-                  class="lg:text-xl mb-3 lg:font-semibold text-base md:text-xl text-white"
+                  class="lg:text-xl lg:mb-3 lg:font-semibold text-base md:text-xl text-white"
                 >
                   OUR COMPANY
                 </li>
-                <a href="#about"><li class="mb-2">About Us</li></a>
-                <a href="#focus"><li class="mb-2">Our Focus</li></a>
-                <a href="#team"><li class="mb-2">Our Team</li></a>
-                <a href="#contact"><li>Contact Us</li></a>
+                <li class="mb-2">About Us</li>
+                <li class="mb-2">Our Focus</li>
+                <li class="mb-2">Our Team</li>
+                <li>Contact Us</li>
               </ul>
 
               <ul
                 class="text-white w-[50%] ml-5 lg:text-base text-sm md:text-base"
               >
                 <li
-                  class="lg:text-xl mb-3 lg:font-semibold text-base md:text-xl text-white"
+                  class="lg:text-xl lg:mb-3 lg:font-semibold text-base md:text-xl text-white"
                 >
                   PRODUCTS
                 </li>
