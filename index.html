@@ -52,6 +52,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
     <link rel="manifest" href="/assets/favico/site.webmanifest">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+      function sendmail(){
+        var name=document.getElementById('name').value;
+        var email=document.getElementById('email').value;
+        var pno=document.getElementById('pno').value;
+        var msg=document.getElementById('message').value;
+        var body= 'Name: '+name+'<br/> Phone number: '+pno+'<br/> Email: '+email+'<br/><br/>'+msg;
+        Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "priamathu0205@gmail.com",
+      Password : "6FFB97E93BC6E55A9C96267F063F9D1B3DAC",
+      To : 'priamathu0205@gmail.com',
+      From : email,
+      Subject : "New Connection message from user",
+      Body : body
+     }).then(function (message) {
+          alert("mail sent successfully")
+        });
+       }
+    </script>
   </head>
   <body>
      <header>
@@ -564,34 +586,35 @@
               ></iframe>
             </div>
             <form
-              action="www.getform.io"
-              method="POST"
+              onsubmit="sendmail()"
               class="flex flex-col w-full lg:w-[50%]"
             >
               <input
                 type="text"
-                name="name"
+                id="name"
                 placeholder="Enter your name"
                 class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
               />
               <input
                 type="text"
-                name="pno"
+                id="pno"
                 placeholder="Mobile Number"
                 class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
               />
               <input
-                type="text"
-                name="email"
+                type="email"
+                id="email"
                 placeholder="Email address"
                 class="shadow-[0_0_5px_rgba(0,0,0,0.25)] py-3 mb-[30px] pl-4 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
               />
               <textarea
+                id="message"
                 placeholder="Message"
                 rows="9"
                 class="placeholder:text-left shadow-[0_0_5px_rgba(0,0,0,0.25)] mb-[30px] pt-6 pl-3 bg-gray-100 border-2 text-base border-gray-100 rounded-md text-black"
               ></textarea>
               <button
+                type="submit"
                 class="text-white bg-[#3fbbc7] text-sm lg:text-base rounded-md py-4 font-body"
               >
                 Send
